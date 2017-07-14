@@ -19,6 +19,9 @@ class AddEditViewController: UIViewController {
             addEditTableView.register(nib1, forCellReuseIdentifier: "DescriptionTableViewCell")
         }
     }
+    @IBAction func goBack(sender: Any){
+        performSegue(withIdentifier: "backToMain", sender: self)
+    }
     
     var task: Task = Task(name: "", description: "")
     
@@ -27,11 +30,6 @@ class AddEditViewController: UIViewController {
         
         addEditTableView.dataSource = self
         addEditTableView.delegate = self
-        
-        // TODO:
-        // 1. Оповещать об изменениях в полях VC
-        // 2. Сохранять значения в модель / поля
-        // 3. При нажатии на кнопку Save/Edit передовать модель на экран Todo List
     }
     
     
@@ -60,9 +58,7 @@ class AddEditViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func goBack(sender: Any){
-        performSegue(withIdentifier: "backToMain", sender: self)
-    }
+   
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let todoListViewController = segue.destination as! ToDoListTableViewController

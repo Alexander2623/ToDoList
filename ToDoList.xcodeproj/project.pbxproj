@@ -19,6 +19,7 @@
 		1FB952671F1512A100E73873 /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB952661F1512A100E73873 /* AddEditViewController.swift */; };
 		1FB9526C1F16442A00E73873 /* CellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9526B1F16442A00E73873 /* CellDelegate.swift */; };
 		1FB9526E1F16688C00E73873 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9526D1F16688C00E73873 /* Task.swift */; };
+		1FB952711F189FDE00E73873 /* ToDoListDataDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB952701F189FDE00E73873 /* ToDoListDataDisplayManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		1FB952661F1512A100E73873 /* AddEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
 		1FB9526B1F16442A00E73873 /* CellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDelegate.swift; sourceTree = "<group>"; };
 		1FB9526D1F16688C00E73873 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		1FB952701F189FDE00E73873 /* ToDoListDataDisplayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListDataDisplayManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +72,9 @@
 			children = (
 				1FB9525D1F15110B00E73873 /* Cells */,
 				1FB952471F14AA5400E73873 /* ToDoListTableViewController.swift */,
-				1FB952491F14AA5400E73873 /* Main.storyboard */,
 				1FB952661F1512A100E73873 /* AddEditViewController.swift */,
+				1FB952701F189FDE00E73873 /* ToDoListDataDisplayManager.swift */,
+				1FB952721F18A11B00E73873 /* Storyboard */,
 				1FB9526F1F16699D00E73873 /* Data */,
 				1FB9526A1F1601EA00E73873 /* SupportFiles */,
 			);
@@ -107,6 +110,14 @@
 				1FB9526D1F16688C00E73873 /* Task.swift */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		1FB952721F18A11B00E73873 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1FB952491F14AA5400E73873 /* Main.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB952711F189FDE00E73873 /* ToDoListDataDisplayManager.swift in Sources */,
 				1FB952641F1511CA00E73873 /* DescriptionTableViewCell.swift in Sources */,
 				1FB9526C1F16442A00E73873 /* CellDelegate.swift in Sources */,
 				1FB952671F1512A100E73873 /* AddEditViewController.swift in Sources */,
